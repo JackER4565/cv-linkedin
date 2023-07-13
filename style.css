@@ -14,27 +14,28 @@ body {
     background-color: #fff;
     /* padding: 10px 0px; */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    width: 100vw;
-    height: 10%;
+    /* width: 100vw; */
+    height: 52px;
     display: flex;
-    margin-left: 5%;
+
 
     & .head__left {
+        margin-left: 5%;
         /* background-color: green; */
         padding: 10px 0px;
         display: flex;
 
         & .s_icon {
-            margin-left: 5px;
+            margin-left: 1px;
             width: 100%;
             height: 100%;
 
             & i {
-
+                display: flex;
                 position: absolute;
-                padding: 10px;
-                min-width: 50px;
-                text-align: center;
+                /* margin-left: 10px; */
+                padding-left: 18px;
+                padding-top: 9px;
             }
 
             & input {
@@ -51,10 +52,16 @@ body {
         }
 
         & .logo svg {
+            /* display: flex;
+            position: absolute; */
             color: #0a66c2;
-            width: 100%;
-            height: 100%;
+            width: 32px;
+            height: 32px;
+            margin: 0;
+            padding: 0;
+            top: 1px;
             margin-left: 10px;
+
 
         }
 
@@ -62,57 +69,91 @@ body {
     }
 
     & .head__center {
+        width: 100%;
+        display: flex;
         margin: 0;
         padding: 0;
         border: 0;
         vertical-align: baseline;
-        background-color: red;
-        margin-left: 10px;
+        justify-content: space-around;
+        /* background-color: red; */
+        margin-right: 5%;
+
+        & ul {
+            height: 100%;
+        }
 
         & li {
+            margin: 0;
+            height: 100%;
             list-style: none;
             display: inline-block;
+            /* margin-bottom: 10px; */
+            padding-left: 30px;
+        }
 
-            & .boton_lista {
-                /* border:solid 3px blue; */
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+        & .btn_me {
+            border-right: 1px solid #000000;
+            padding-top: 0;
+            margin-top: 0;
+            display: flex;
+            position: relative;
+            top: 0;
+        }
 
-                & i {
-                    padding-top: 10px;
-                    padding-bottom: 0px;
-                    text-align: center;
-                }
+        & .boton_lista {
+            /* border:solid 3px blue; */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-                & a {
-                    text-decoration: none;
-                    color: #000000;
-                    font-size: 12px;
-                    padding: 0px 10px;
-
-                }
+            & i {
+                padding-top: 5px;
+                padding-bottom: 0px;
+                text-align: center;
             }
 
+            & a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 12px;
+                padding: 0px 10px;
+            }
+
+
         }
-
-
     }
+}
 
-    /* & .head__right {
-        display: flex;
+/* Main section */
+.main__container{
+    display: flex;
+    /* background-color: red; */
+    margin-top: 25px;
+    height: 1000px;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    width: 100%;
+    /* margin-bottom: 10px; */
+    /* padding: 10px; */
+    /* border: 1px solid #000000; */
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); */
+    & .main__margen{
+        width: 5%;
+    }
+    & .main__col1{
         background-color: blue;
-        margin-left: 10px;
-
-        & .vl {
-            border-left: 1px solid #000000;
-            
-            top: 0;
-            width: 100px;
-            height: auto;
-            margin-left: 10px;
-        }
-
-
-    } */
+        width: 64%;
+        border-radius: 5px;
+    }
+    & .main__midmargen{
+        width: 2%;
+    }
+    & .main__col2{
+        border-radius: 5px;
+        width: 24%;
+        background-color: red;
+    }
 }
